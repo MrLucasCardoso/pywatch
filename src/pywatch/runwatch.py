@@ -32,7 +32,7 @@ def main(args=None):
     options, args = parser.parse_args(args)
 
     if options.version:
-        print "pywatch %s" % VERSION
+        print("pywatch %s" % VERSION)
         sys.exit(0)
 
     confile = None 
@@ -50,7 +50,7 @@ def main(args=None):
         try: 
             jconf = json.load( cf )
         except ValueError:
-            print "Invalid JSON" 
+            print("Invalid JSON" )
             cf.close()
             exit() 
         cf.close() 
@@ -64,7 +64,7 @@ def main(args=None):
         w.run_monitor()
         sys.exit(0)
     else: 
-        print parser.error("You must provide a shell command and at least one file.")
+        print(parser.error("You must provide a shell command and at least one file."))
 
 if __name__ == "__main__":
     main()
