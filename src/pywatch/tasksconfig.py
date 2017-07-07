@@ -2,9 +2,9 @@ import sys
 import os
 import json
 
-from commandexecutor import CommandExecutor
-from filematcher import FileMatcher 
-from watcher import Watcher
+from .commandexecutor import CommandExecutor
+from .filematcher import FileMatcher 
+from .watcher import Watcher
 
 
 class TasksConfig( object ): 
