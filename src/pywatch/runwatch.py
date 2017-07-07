@@ -3,7 +3,7 @@ import sys
 import json
 from optparse import OptionParser
 from .watcher import Watcher
-from tasksconfig import TasksConfig
+from .tasksconfig import TasksConfig
 
 def main(args=None):
     """
