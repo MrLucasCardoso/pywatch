@@ -92,8 +92,8 @@ class CommandExecutor(object):
     def execute( self, filePath ): 
         filePath = os.path.abspath( filePath ) 
         s = self.constructDictionary( filePath ) 
-        print self.cmd
+        print(self.cmd)
         c = self.cmd % s 
-        if self.verbose : print c 
+        if self.verbose : print(c)
         os.system( c )
         
